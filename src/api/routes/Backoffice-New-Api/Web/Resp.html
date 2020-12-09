@@ -1,0 +1,45 @@
+ <!-- <html>  
+  
+// <head>  
+//     <TITLE>HTML-2</TITLE>  
+// </head>  
+  
+// <body>  
+//     <h1> This is HTML Page - 2  </h1>  
+//     <h2><%= txnid %></h2>
+// </body>  
+  
+// </html> -->
+
+
+
+
+
+<!DOCTYPE html>  
+<html>  
+  
+<head>  
+    <!-- <title>HTML Redirect</title>  -->
+    <%if (status  == 'success') { %>
+        <meta http-equiv="refresh"
+        content="0; url = https://beatmysugar.com/paymentprocess/<%= txnid %>" />  
+        <% } else{ %>  
+            <meta http-equiv="refresh"
+            content="0; url = https://beatmysugar.com/paymentfail/<%= txnid %>" />  
+        <% } %>
+
+</head>  
+  
+<body>  
+    <h1 style="text-align:center;color:green;">  
+        <!-- BMS -->
+    </h1>  
+      
+    <p style="text-align:center;">  
+        <!-- If your browser supports Refresh,  
+        you'll be redirected to BMS
+        Homepage, in 5 seconds.   -->
+    </p>  
+</body>  
+  
+</html> 

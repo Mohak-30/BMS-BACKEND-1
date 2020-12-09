@@ -1,0 +1,10 @@
+{
+    "server" : "65.0.161.134",
+    "user" : "sa",
+    "password" : "vU3B5w53&Z",
+    "database" : "bmsdev2",
+    "port" : 1433,
+    "options" : {
+        "encrypt" : false
+    }
+}
